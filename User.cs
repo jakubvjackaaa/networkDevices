@@ -11,5 +11,6 @@ namespace networkDevices
         private Guid ID;
         public string UserName { get; set; }
         public User(string userName) { UserName = userName; ID = Guid.NewGuid(); }
+        public override string ToString() { return UserName; }
     }
 }

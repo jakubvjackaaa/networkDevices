@@ -34,7 +34,10 @@ namespace networkDevices
         }
         public void getDevices()
         {
-            foreach(KeyValuePair<IDevice,List<User>> i in Data) { Console.WriteLine(i.Key.ID+":"+i.Key.Hostname + ":" +i.Key.MAC +">>"+string.Join(":",i.Value)); }
+            foreach(KeyValuePair<IDevice,List<User>> item in Data)
+            {
+                Console.WriteLine("[" + item.Key.ID + "]" + " : ("+item.Key.Hostname+";"+item.Key.MAC+") Users: "+string.Join(";",item.Value));
+            }
         }
         public void getDataFromFile(string path)
         {
