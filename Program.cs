@@ -11,7 +11,7 @@ namespace networkDevices
     {
         static void Main(string[] args)
         {
-            Database database = new Database();  
+            Database database = new Database(); 
         }
     }
 }
