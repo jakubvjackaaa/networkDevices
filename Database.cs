@@ -20,8 +20,7 @@ namespace networkDevices
         {
             if (Data.ContainsKey(input))
             {
-                var x = Data[input];
-                x.Add(user);                
+                Data[input].Add(user);                
             }
             else
             {
