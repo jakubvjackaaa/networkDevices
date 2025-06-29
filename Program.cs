@@ -11,13 +11,7 @@ namespace networkDevices
     {
         static void Main(string[] args)
         {
-            Database database = new Database();
-            IDevice router = new Router("XXX", "VVVV");
-            IDevice switch_ = new Switch("FGSFSD", "CVCXVX");
-            database.getNewDevice(router);
-            database.getAddUsersUsingDevice(router,new User("jannovak"));
-            database.getAddUsersUsingDevice(router, new User("jakubvjacka"));
-            database.getDevices();
+            Database database = new Database();  
         }
     }
 }
